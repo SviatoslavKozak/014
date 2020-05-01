@@ -1,0 +1,11 @@
+version: "3.8"
+
+service:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dokerfile
+
+  ubuntu:
+    build:
+      context: 
