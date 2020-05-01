@@ -1,8 +1,8 @@
-FROM Ubuntu:18.04
+FROM ubuntu:18.04
 
 MAINTAINER svyatoslav <svyatoslav12381@gmail.com>
 
-RUN apt-get update && apt-get install -y apache2 && sudo service apache2 start
+RUN apt-get update && apt-get install -y apache2 && service apache2 start
 
 EXPOSE 8081
 
