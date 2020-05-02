@@ -1,0 +1,10 @@
+#!/bin/bash
+file=$(find $1 -mtime -1)
+date=$(date $i +%Y-%m-%d)
+for i in $file
+do
+   if [ ! -d $date ]
+   then
+      mkdir $2/$(ate $i +%Y-%m-%d)
+      chmod 777 $2/$(date $i +%Y-%m-%d)        
+ 
