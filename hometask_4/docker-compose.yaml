@@ -1,12 +1,15 @@
 version: "3.8"
 
 services:
-  ubuntu:
+
+  apache:
     build:
-      context: ./apache2-dfile
+      context: ./apache-server
       dockerfile: Dockerfile
+    links:
+      - mysql
 
   mysql:
     build:
-      context: ./mysql-dfile
+      context: ./mysql-server
       dockerfile: Dockerfile
